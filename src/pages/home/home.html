@@ -1,0 +1,95 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+
+	<img src="assets/imgs/logo.jpg">
+
+	<ion-card>
+		<ion-card-header>
+			Onde estamos?
+		</ion-card-header>
+		<ion-card-content>
+			Sargento Hermínio, 1511, Lojas 7 e 8
+		</ion-card-content>
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			Telefone de contato
+		</ion-card-header>
+		<ion-card-content>
+			3038-3095
+		</ion-card-content>
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			Horário de funcionamento
+		</ion-card-header>
+		<ion-card-content>
+			Seg à Sab: 14h às 22h<br>
+			Dom e feriados: 17h às 22h
+		</ion-card-content>
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			O que oferecemos?
+		</ion-card-header>
+		<ion-card-content>
+			Lanches nutritivos e saborosos<br>
+			Loja climatizada<br> 
+  			Estacionamento gratuito<br>
+  			Preço justo<br>
+  			Atendimento personalizado<br>
+  			Cartão fidelidade<br>
+		  	E muito mais... Venha conhecer!
+		</ion-card-content>
+	</ion-card>
+
+	<ion-menu [content]="content">
+<!--	  <ion-header>
+	    <ion-toolbar>
+	      <ion-title></ion-title>
+	    </ion-toolbar>
+	  </ion-header>-->
+	  <ion-content>
+	    <ion-list>
+	      <button ion-item (click)="openPage(homePage)">
+	        Home
+	      </button>
+	      <button ion-item (click)="openSanduiches()">
+	        Sanduíches
+	      </button>
+	      <button ion-item (click)="openCrepiocas()">
+	        Crepiocas
+	      </button>
+	      <button ion-item (click)="openPage(eventsPage)">
+	        Salgados Integrais
+	      </button>
+	      <button ion-item (click)="openPage(eventsPage)">
+	        Vitaminas
+	      </button>
+	      <button ion-item (click)="openPage(eventsPage)">
+	        Sucos Naturais
+	      </button>
+	      <button ion-item (click)="openPage(eventsPage)">
+	        Açaí
+	      </button>
+	      <button ion-item (click)="openPromocoes()">
+	        Promoções
+	      </button>
+	      <button ion-item (click)="openPage(eventsPage)">
+	        Cartão Fidelidade
+	      </button>
+	      <button ion-item (click)="closeMenu()">
+	        Close Menu
+	      </button>
+	    </ion-list>
+	  </ion-content>
+	</ion-menu>
+
+	<ion-nav id="nav" #content [root]="rootPage"></ion-nav>
+
+</ion-content>
