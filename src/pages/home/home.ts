@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { SanduichesPage } from '../sanduiches/sanduiches';
 import { CrepiocasPage } from '../crepiocas/crepiocas';
 import { PromocoesPage } from '../promocoes/promocoes';
+import { SalgadosPage } from '../salgados/salgados';
 
 @Component({
   selector: 'page-home',
@@ -24,6 +25,10 @@ export class HomePage {
 
   openPromocoes(){
     this.navCtrl.push(PromocoesPage);
+  }
+
+  openSalgados(){
+    this.navCtrl.push(SalgadosPage);
   }
 
 }

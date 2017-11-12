@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { SanduichesPage } from '../sanduiches/sanduiches';
+import { SalgadosPage } from '../salgados/salgados';
+import { CrepiocasPage } from '../crepiocas/crepiocas';
+
 /**
  * Generated class for the LanchesPage page.
  *
@@ -22,4 +26,15 @@ export class LanchesPage {
     console.log('ionViewDidLoad LanchesPage');
   }
 
+  goToSanduichesPage(){
+  	this.navCtrl.push(SanduichesPage);
+  }
+
+  goToSalgadosPage(){
+    this.navCtrl.push(SalgadosPage);
+  }
+
+  goToCrepiocasPage(){
+    this.navCtrl.push(CrepiocasPage);
+  }
 }

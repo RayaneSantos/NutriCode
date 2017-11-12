@@ -13,6 +13,8 @@ import { LanchesPageModule } from '../pages/lanches/lanches.module';
 import { BebidasPageModule } from '../pages/bebidas/bebidas.module';
 import { SanduichesPageModule } from '../pages/sanduiches/sanduiches.module';
 import { CrepiocasPageModule } from '../pages/crepiocas/crepiocas.module';
+import { SalgadosPageModule} from '../pages/salgados/salgados.module';
+import { IntroPageModule} from '../pages/intro/intro.module';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -34,7 +36,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     LanchesPageModule,
     BebidasPageModule,
     SanduichesPageModule,
-    CrepiocasPageModule
+    CrepiocasPageModule,
+    SalgadosPageModule,
+    IntroPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
