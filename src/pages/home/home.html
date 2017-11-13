@@ -1,6 +1,9 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+	<button ion-button icon-only menuToggle>
+		<ion-icon name="menu"></ion-icon>
+	</button>
+	<ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -49,11 +52,6 @@
 	</ion-card>
 
 	<ion-menu [content]="content">
-<!--	  <ion-header>
-	    <ion-toolbar>
-	      <ion-title></ion-title>
-	    </ion-toolbar>
-	  </ion-header>-->
 	  <ion-content>
 	    <ion-list>
 	      <button ion-item (click)="openPage(homePage)">
@@ -68,23 +66,20 @@
 	      <button ion-item (click)="openSalgados()">
 	        Salgados Integrais
 	      </button>
-	      <button ion-item (click)="openPage(eventsPage)">
+	      <button ion-item (click)="openVitaminas()">
 	        Vitaminas
 	      </button>
-	      <button ion-item (click)="openPage(eventsPage)">
+	      <button ion-item (click)="openSucos()">
 	        Sucos Naturais
 	      </button>
-	      <button ion-item (click)="openPage(eventsPage)">
+	      <button ion-item (click)="openCremes()">
 	        Açaí
 	      </button>
 	      <button ion-item (click)="openPromocoes()">
 	        Promoções
 	      </button>
-	      <button ion-item (click)="openPage(eventsPage)">
+	      <button ion-item (click)="openFidelidade()">
 	        Cartão Fidelidade
-	      </button>
-	      <button ion-item (click)="closeMenu()">
-	        Close Menu
 	      </button>
 	    </ion-list>
 	  </ion-content>

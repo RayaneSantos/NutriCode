@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { VitaminasPage } from '../vitaminas/vitaminas';
+import { SucosPage } from '../sucos/sucos';
+
+
 /**
  * Generated class for the BebidasPage page.
  *
@@ -20,6 +24,14 @@ export class BebidasPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad BebidasPage');
+  }
+
+  goToVitaminasPage(){
+  	this.navCtrl.push(VitaminasPage);
+  }
+
+  goToSucosPage(){
+    this.navCtrl.push(SucosPage);
   }
 
 }

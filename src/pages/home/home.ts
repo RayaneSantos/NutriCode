@@ -1,9 +1,14 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { HomePage } from '../home/home';
 import { SanduichesPage } from '../sanduiches/sanduiches';
 import { CrepiocasPage } from '../crepiocas/crepiocas';
-import { PromocoesPage } from '../promocoes/promocoes';
 import { SalgadosPage } from '../salgados/salgados';
+import { VitaminasPage } from '../vitaminas/vitaminas';
+import { SucosPage } from '../sucos/sucos';
+import { CremesPage } from '../cremes/cremes';
+import { PromocoesPage } from '../promocoes/promocoes';
+import { FidelidadePage } from '../fidelidade/fidelidade';
 
 @Component({
   selector: 'page-home',
@@ -15,6 +20,10 @@ export class HomePage {
 
   }
 
+  openHome(){
+    this.navCtrl.push(HomePage);
+  }
+
   openSanduiches(){
   	this.navCtrl.push(SanduichesPage);
   }
@@ -23,12 +32,28 @@ export class HomePage {
   	this.navCtrl.push(CrepiocasPage);
   }
 
+  openSalgados(){
+    this.navCtrl.push(SalgadosPage);
+  }
+
+  openVitaminas(){
+    this.navCtrl.push(VitaminasPage);
+  }
+
+  openSucos(){
+    this.navCtrl.push(SucosPage);
+  }
+
+  openCremes(){
+    this.navCtrl.push(CremesPage);
+  }
+
   openPromocoes(){
     this.navCtrl.push(PromocoesPage);
   }
 
-  openSalgados(){
-    this.navCtrl.push(SalgadosPage);
+  openFidelidade(){
+    this.navCtrl.push(FidelidadePage);
   }
 
 }
