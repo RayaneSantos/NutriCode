@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="royal">
 	<button ion-button icon-only menuToggle>
 		<ion-icon name="menu"></ion-icon>
 	</button>
@@ -17,22 +17,32 @@
 		</ion-card-header>
 		<ion-card-content>
 			Sargento Hermínio, 1511, Lojas 7 e 8
+			<br>
+			<button ion-button round outline color="secondary" icon-start (click)="openMaps()" >
+				<ion-icon name="map"></ion-icon>
+					Mapa
+			</button>
 		</ion-card-content>
 	</ion-card>
+
 	<ion-card>
 		<ion-card-header>
 			Telefone de contato
 		</ion-card-header>
-		<ion-card-content>
-			3038-3095
+		<ion-card-content>			
+			<button ion-button round outline color="secondary" icon-start (click)="callNumber()">
+	          <ion-icon name="call"></ion-icon>
+	          		3038 - 3095
+	        </button>
 		</ion-card-content>
 	</ion-card>
+ <!--   <a ion-button href="tel:085-30383095" class="button button-balanced" >Call me 1 </a>-->
 	<ion-card>
 		<ion-card-header>
 			Horário de funcionamento
 		</ion-card-header>
 		<ion-card-content>
-			Seg à Sab: 14h às 22h<br>
+			Seg à Sab: 15h às 22h<br>
 			Dom e feriados: 17h às 22h
 		</ion-card-content>
 	</ion-card>
@@ -50,41 +60,46 @@
 		  	E muito mais... Venha conhecer!
 		</ion-card-content>
 	</ion-card>
+</ion-content>
 
-	<ion-menu [content]="content">
-	  <ion-content>
-	    <ion-list>
-	      <button ion-item (click)="openPage(homePage)">
-	        Home
-	      </button>
-	      <button ion-item (click)="openSanduiches()">
-	        Sanduíches
-	      </button>
-	      <button ion-item (click)="openCrepiocas()">
-	        Crepiocas
-	      </button>
-	      <button ion-item (click)="openSalgados()">
-	        Salgados Integrais
-	      </button>
-	      <button ion-item (click)="openVitaminas()">
-	        Vitaminas
-	      </button>
-	      <button ion-item (click)="openSucos()">
-	        Sucos Naturais
-	      </button>
-	      <button ion-item (click)="openCremes()">
-	        Açaí
-	      </button>
-	      <button ion-item (click)="openPromocoes()">
-	        Promoções
-	      </button>
-	      <button ion-item (click)="openFidelidade()">
-	        Cartão Fidelidade
-	      </button>
-	    </ion-list>
-	  </ion-content>
-	</ion-menu>
+<ion-menu [content]="content">
+	<ion-header>
+		<ion-navbar color="royal">
+			<ion-title>Menu</ion-title>
+		</ion-navbar>
+	</ion-header>
+
+  <ion-content>
+    <ion-list>
+      <button ion-item (click)="openHome()">
+        Home
+      </button>
+      <button ion-item (click)="openSanduiches()">
+        Sanduíches
+      </button>
+      <button ion-item (click)="openCrepiocas()">
+        Crepiocas
+      </button>
+      <button ion-item (click)="openSalgados()">
+        Salgados Integrais
+      </button>
+      <button ion-item (click)="openVitaminas()">
+        Vitaminas
+      </button>
+      <button ion-item (click)="openSucos()">
+        Sucos Naturais
+      </button>
+      <button ion-item (click)="openCremes()">
+        Cremes
+      </button>
+      <button ion-item (click)="openPromocoes()">
+        Promoções
+      </button>
+      <button ion-item (click)="openFidelidade()">
+        Cartão Fidelidade
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
 
 	<ion-nav id="nav" #content [root]="rootPage"></ion-nav>
-
-</ion-content>

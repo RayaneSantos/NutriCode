@@ -6,16 +6,16 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="royal">
     <ion-title>Bebidas</ion-title>
   </ion-navbar>
 
 </ion-header>
 
-
+ 
 <ion-content padding>
 	<img src="assets/imgs/sucos_naturais.jpg"/>
-		<a (click)="goToVitaminasPage()">Ver vitaminas</a>
+  <button  ion-button round outline float-right color="secondary" (click)="goToVitaminasPage()">Ver vitaminas</button>
 	<div> Vitaminas </div>
-		<a (click)="goToSucosPage()">Ver sucos naturais</a>
+  <button ion-button round outline float-right color="secondary" (click)="goToSucosPage()">Ver sucos naturais</button>
 </ion-content>

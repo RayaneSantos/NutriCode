@@ -1,6 +1,8 @@
 {
   "name": "NutriFitness",
-  "app_id": "",
+  "app_id": "27460283",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { HomePage } from '../home/home';
+import { CallNumber } from '@ionic-native/call-number';
+
 import { SanduichesPage } from '../sanduiches/sanduiches';
 import { CrepiocasPage } from '../crepiocas/crepiocas';
 import { SalgadosPage } from '../salgados/salgados';
@@ -9,6 +10,7 @@ import { SucosPage } from '../sucos/sucos';
 import { CremesPage } from '../cremes/cremes';
 import { PromocoesPage } from '../promocoes/promocoes';
 import { FidelidadePage } from '../fidelidade/fidelidade';
+import { MapsPage } from '../maps/maps';
 
 @Component({
   selector: 'page-home',
@@ -16,8 +18,21 @@ import { FidelidadePage } from '../fidelidade/fidelidade';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, private call: CallNumber) {
 
+  }
+
+  async callNumber():Promise<any>{
+    try{
+      await this.call.callNumber('08530383095', true);
+    }
+    catch(e){
+      console.error(e);
+    }
+  }
+
+  openMaps(){
+    this.navCtrl.push(MapsPage);
   }
 
   openHome(){

@@ -6,18 +6,23 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="royal">
     <ion-title>Lanches</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-	<img src="assets/imgs/sanduiche_foto.jpg"/>
-	<a (click)="goToSanduichesPage()">Ver sanduíches</a>
+<ion-content>
+	
+
+	<img src="assets/imgs/sanduiche_foto.jpg"/>		
+	<button ion-button full outline float-right color="secondary" (click)="goToSanduichesPage()">Ver sanduíches</button>
+
 	<img src="assets/imgs/salgado_integral.jpg"/>
-	<a (click)="goToSalgadosPage()">Ver salgados</a>
-	<div> Crepiocas </div>
-	<a (click)="goToCrepiocasPage()">Ver crepiocas</a>
+	<button  ion-button round outline float-right color="secondary" (click)="goToSalgadosPage()">Ver salgados</button>
+	
+	<img src="assets/imgs/crepiocas_foto.jpg"/>
+	<button ion-button round outline float-right color="secondary" (click)="goToCrepiocasPage()">Ver crepiocas</button>
+
 </ion-content>
